@@ -22,7 +22,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!/bin/ash\n# Redis Installation Script\n#\n# Server Files: /mnt/server\n\napk add --no-cache curl\n\nmkdir -p /mnt/server\ncd /mnt/server/\n\nif [ ! -f /mnt/server/redis.conf ]; then\n    curl -fsSL https://raw.githubusercontent.com/Ptero-Eggs/application-eggs/main/database/redis/redis-7/redis.conf -o redis.conf\nfi\n\necho -e \"Install complete.\"",
+            "script": "#!/bin/ash\n# Redis Installation Script\n#\n# Server Files: /mnt/server\n\napk add --no-cache curl\n\nmkdir -p /mnt/server\ncd /mnt/server/\n\nif [ ! -f /mnt/server/redis.conf ]; then\n    curl -fsSL https://raw.githubusercontent.com/Ptero-Eggs/application-eggs/main/database/redis/redis-8/redis.conf -o redis.conf\nfi\n\necho -e \"Install complete.\"",
             "container": "ghcr.io/ptero-eggs/installers:alpine",
             "entrypoint": "ash"
         }
